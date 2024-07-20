@@ -1,0 +1,150 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    color: white;
+    font-family: sans-serif;
+    overflow-x: hidden;
+  }
+.main{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+nav{
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 4vh;
+  width: 100%;
+}
+nav h4:last-child{
+  margin-right: 4vw;
+}
+nav i{
+  padding: 1vh;
+  background-color: white;
+  color: black;
+  border-radius: 50%;
+}
+.center{
+  width: 100vw;
+
+}
+.center h1{ 
+  line-height: 2vw;
+  padding:3vw 3vw 0vw 3vw;
+  font-size: 4vw;
+  font-weight: 500;
+}
+.center-in p{
+  margin-top: 3vw;
+  font-size: 1vw;
+  padding-left: 3vw;
+}
+.center-in{
+  display: flex;
+  width: 100%;
+  height: 30vh;
+  justify-content: space-between;
+}
+.right{
+  width: 20%;
+  margin-right: 8vw;
+}
+.elem {
+  width: 100%;
+  margin: 2vh;
+  padding-top: 2vh;
+  font-size: 1vw;
+  border-top: 0.2vw solid; /* Add border-style here */
+  border-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.elem i {
+  transform: rotate(300deg); /* Corrected property */
+  font-size: 1vw;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+.elem:hover a{
+  text-decoration: underline;
+}
+.elem:hover i {
+  opacity: 1;
+}
+
+.elem a {
+  color: white;
+  text-decoration: none;
+}
+.bottom{
+  width: 100%;
+  height: 60vh;
+  background: white;
+  background-image: url('https://images.unsplash.com/photo-1707296155308-a2410b6ab29f?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTR8fGJsYWNrJTIwYWVzdGhldGljfGVufDB8fDB8fHww');
+  background-position: 0 80%;
+  position: relative;
+  background-size: cover;
+}
+.bottom1{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(128, 128, 128, 0.257);
+  top: 0%;
+  left: 0%;
+}
+@media (max-width:600px) {
+  nav h4{
+   font-size: 3vw;
+  }
+  nav h4:nth-of-type(1){
+    display: none;
+  }
+  nav h4:nth-of-type(2){
+    display: none;
+  }
+  nav h4:nth-of-type(3){
+    display: none;
+  }
+  .center{
+    text-align: center;
+  }
+  .center h1{ 
+    line-height: 3.8vw;
+    font-weight: 500;
+    font-size: 8vw;
+  }
+  .center-in{
+    display: grid;
+    margin-left: 15%;
+    position: relative;
+  }
+  .center-in p{
+    font-size: 2vw;
+    width: 100%;
+    flex-direction: column;
+  }
+  .center-in{
+    width: 100%;
+    height: 30vh;
+  }
+  .right{
+    width: 90%;  
+  }
+  .elem a{
+    font-size: 2vw;
+  }
+  .elem i {
+    opacity: 1;
+    font-size: 2vw;
+  }
+  .bottom{
+    height: 45vh;
+  }
+}
